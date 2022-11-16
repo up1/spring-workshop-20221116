@@ -6,3 +6,4 @@
   * [stubby4j](https://github.com/azagniotov/stubby4j)
 * API testing with Postman
   * [newman](https://www.npmjs.com/package/newman)
+  * [JSON Schema](https://json-schema.org/understanding-json-schema/reference/object.html#required-properties)
