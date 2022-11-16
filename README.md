@@ -9,5 +9,8 @@
   * [JSON Schema](https://json-schema.org/understanding-json-schema/reference/object.html#required-properties)
 * Performance testing
   * Apache JMeter
+  * [JMeter plugins](https://jmeter-plugins.org/)
+     * [Custom Thread Group](https://jmeter-plugins.org/wiki/ConcurrencyThreadGroup/)
+  * [Compa re Tools](https://k6.io/blog/k6-vs-jmeter/)
   
 * [Board Miro](https://miro.com/app/board/uXjVPDTTt_U=/)
