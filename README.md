@@ -1,6 +1,16 @@
 # spring-workshop-20221116
 * Spring Boot
   * [Project structure](https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.structuring-your-code)
+  
+  
+* Custom memory of JVM
+```
+$java -X
+
+$java -Xms400M -Xmx400M -jar target/demo_day01-0.0.1-SNAPSHOT.jar
+```
+
+
 * Mock API server
   * [stubby4node](https://github.com/mrak/stubby4node)
   * [stubby4j](https://github.com/azagniotov/stubby4j)
