@@ -7,3 +7,7 @@
 * API testing with Postman
   * [newman](https://www.npmjs.com/package/newman)
   * [JSON Schema](https://json-schema.org/understanding-json-schema/reference/object.html#required-properties)
+* Performance testing
+  * Apache JMeter
+  
+* [Board Miro](https://miro.com/app/board/uXjVPDTTt_U=/)
