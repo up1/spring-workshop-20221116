@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class DemoGateway {
 
     public void call(){
-
+        System.out.println("Called gateway");
     }
 
 }
