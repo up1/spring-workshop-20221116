@@ -14,9 +14,23 @@ public class DemoService {
 
     @Transactional
     public void process1(){
-        demoRepository.findAll();
-        demoRepository.findById(1);
-        demoGateway.call();
+        throw new RuntimeException();
+//        boolean flag = true;
+//        for (int i = 0; i < 5; i++) {
+//            if(i<3) {
+//                System.out.println("Do nothing");
+//            }
+//        }
+//
+//        demoRepository.findAll();
+//        demoRepository.findById(1);
+//        demoGateway.call();
     }
 
+    public void process2(String name) {
+        if("somkiat".equals(name)){
+            System.out.println("Hello "+ name);
+        }
+        System.out.println("Hello");
+    }
 }
