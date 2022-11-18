@@ -17,3 +17,17 @@ $docker login
 
 $docker image push myapp:1.0
 ```
+
+## Working with Docker compose
+```
+$docker-compose build
+
+$docker-compose up -d service1
+$docker-compose up -d
+
+$docker-compose ps
+
+$docker-compose logs --follow
+
+docker-compose down
+```
