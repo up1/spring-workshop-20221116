@@ -3,6 +3,7 @@ package com.somkiat.day2_tx.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionTemplate;
 
 @Service
 public class DemoService {
@@ -12,19 +13,31 @@ public class DemoService {
     @Autowired
     private DemoGateway demoGateway;
 
-    @Transactional
+    @Autowired
+    private TransactionTemplate template;
+
     public void process1(){
-        throw new RuntimeException();
-//        boolean flag = true;
-//        for (int i = 0; i < 5; i++) {
-//            if(i<3) {
-//                System.out.println("Do nothing");
-//            }
-//        }
+
+//        template.execute(status -> {
+//            demoRepository.findAll();
+//            demoRepository.findById(1);
+//            return "OK";
+//        });
 //
-//        demoRepository.findAll();
-//        demoRepository.findById(1);
 //        demoGateway.call();
+//
+//        template.execute(status -> {
+//            demoRepository.findAll();
+//            return "OK";
+//        });
+        step1();
+        demoGateway.call();
+    }
+
+    @Transactional
+    private void step1(){
+        demoRepository.findAll();
+        demoRepository.findById(1);
     }
 
     public void process2(String name) {
